@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
 
     <title>Hello, world!</title>
     <style>
 
         .top-bar {
-            background-color: #ba2e1f
+            background-color: #ba2e1f;
+            height: 50px;
         }
 
         .search {
@@ -29,21 +30,14 @@
         }
 
         .searchicon {
-            background: url('search_icon.png');
+            background: url('search_icon.png') !important;
             width: 32px;
             height: 32px;
             background-repeat: no-repeat;
             margin-right: 10px;
             right: 30px;
             top: 6px;
-            z-index: 99;
-        }
-        .LATEST_TWEETS {
-            font-size: 16px;
-            font-family: "Georgia";
-            color: rgb(102, 102, 102);
-            line-height: 1.2;
-            text-align: left;
+            z-index: 99999 !important;
         }
 
         .body {
@@ -56,61 +50,95 @@
             margin-bottom: 50px;
             padding-right: 0px;
             padding-left: 0px;
+            height: 60px;
         }
 
         .topnavigation {
             background: url('navigationbg.png');
-            width: 100%;
             height: 49px;
-            padding-left: 45px;
-            padding-right: 45px;
         }
 
         .navlink {
             color: white !important;
             padding-left: 35px;
-            padding-right: 35px;
+            padding-right: 15px;
             position: relative;
-            top: 10px;
+            top: 13px;
         }
 
-         a.navlink:hover {
+        a.navlink:hover {
             color: #ba2e1f !important;
+        }
+
+
+        .templatecenter {
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+
+        .searcharea {
+            width: 350px;
+            float: right;
+            margin-top: -25px;
+        }
+
+        .textarea {
+            padding-top: 16px;
+            width: 350px;
+            color: white;
+        }
+
+        .icon {
+            width: 35px;
+            height: 35px;
+            background-repeat: no-repeat;
+            position: relative;
+            display: block;
+            float: right;
         }
     </style>
 </head>
-<body>
-    <div class="top-bar py-3">
-        <div class="row col-12">
-            <span class="px-4 text-white col-6">
-                <a>Sign Up</a> |
-                <a>Login</a> |
-                <a>RSS Feeds</a> |
-                <a>Archived News</a>
-            </span>
-            <div class="col-6">
-                <a class="searchicon float-right col-1"></a>
-                <input type="text" class="search float-right col-5" />
+<body style="
+    margin-right: 0px;
+    margin-left:0px;
+    margin-bottom:0px;
+    margin-top:0px;
+">
+    <div class="top-bar">
+        <div class="templatecenter">
+            <div class="textarea">
+                <span class="text-white">
+                    <a>Sign Up</a> |
+                    <a>Login</a> |
+                    <a>RSS Feeds</a> |
+                    <a>Archived News</a>
+                </span>
+            </div>
+            <div class="searcharea">
+                <a class="searchicon float-right"></a>
+                <input type="text" class="search float-right" />
 
             </div>
         </div>
     </div>
-    <div class="body">
-        <div class="header col-12">
-            <div class="row col-12">
-                <h1>SYSTEMATIC</h1>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <h6>Free PSD Website Template</h6>
+    <div class="templatecenter">
+        <div class="header">
+            <div style="overflow:auto">
+                <div style="float:left;">
+                    <h1 style=" margin:0px">SYSTEMATIC</h1>
+                    <h5 style="font-weight: normal; margin:0px">Free PSD Website Template</h5>
+
                 </div>
-                <div class="col-2">
-                    <a class="float-right" style="background:url('rss.png'); width:35px;height: 35px; background-repeat: no-repeat; position:relative"></a>
-                    <a class="float-right" style="background:url('googleplus.png'); width:35px;height: 35px; background-repeat: no-repeat; position:relative"></a>
-                    <a class="float-right" style="background:url('pinterest.png'); width:35px;height: 35px; background-repeat: no-repeat; position:relative"></a>
-                    <a class="float-right" style="background:url('twitter.png'); width:35px;height: 35px ;background-repeat: no-repeat; position:relative"></a>
-                    <a class="float-right" style="background:url('in.png'); width:35px;height: 35px; background-repeat: no-repeat; position:relative"></a>
+                <div style="float:right;margin:10px 0">
+                    <a class="icon" style="background:url('rss.png');"></a>
+                    <a class="icon" style="background:url('googleplus.png');"></a>
+                    <a class="icon" style="background:url('pinterest.png');"></a>
+                    <a class="icon" style="background:url('twitter.png');"></a>
+                    <a class="icon" style="background:url('in.png');"></a>
                 </div>
+
+
+
             </div>
 
         </div>
@@ -133,8 +161,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>-->
+
 </body>
 </html>
