@@ -31,13 +31,15 @@
 
         .searchicon {
             background: url('search_icon.png') !important;
-            width: 32px;
-            height: 32px;
+            width: 18px;
+            height: 18px;
             background-repeat: no-repeat;
             margin-right: 10px;
-            right: 30px;
-            top: 6px;
+            right: 0px;
+            top: 8px;
             z-index: 99999 !important;
+            display: block;
+            position: absolute;
         }
 
         .body {
@@ -61,7 +63,7 @@
         .navlink {
             color: white !important;
             padding-left: 35px;
-            padding-right: 15px;
+            padding-right: 0px;
             position: relative;
             top: 13px;
         }
@@ -77,9 +79,10 @@
         }
 
         .searcharea {
-            width: 350px;
+            width: auto;
             float: right;
             margin-top: -25px;
+            position: relative;
         }
 
         .textarea {
@@ -96,6 +99,34 @@
             display: block;
             float: right;
         }
+
+        span.hugetitle {
+            font-size: 86px;
+            overflow: auto;
+            /*font-family: "Georgia";*/
+            text-align: left;
+            line-height: 1.2;
+        }
+
+
+        .textgeorgia {
+            font-family: "Georgia";
+            line-height: 1.6;
+        }
+
+        .customborder {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            border-top-width: 0;
+            border-bottom-width: 0;
+            border-right-width: 0;
+            border-left-width: 0;
+            background-color: #f2f2f2;
+            height: 25px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
     </style>
 </head>
 <body style="
@@ -104,7 +135,7 @@
     margin-bottom:0px;
     margin-top:0px;
 ">
-    <div class="top-bar">
+    <div id="topheader" class="top-bar">
         <div class="templatecenter">
             <div class="textarea">
                 <span class="text-white">
@@ -115,13 +146,13 @@
                 </span>
             </div>
             <div class="searcharea">
-                <a class="searchicon float-right"></a>
-                <input type="text" class="search float-right" />
+                <a class="searchicon"></a>
+                <input type="text" class="search" />
 
             </div>
         </div>
     </div>
-    <div class="templatecenter">
+    <div id="header" class="templatecenter">
         <div class="header">
             <div style="overflow:auto">
                 <div style="float:left;">
@@ -156,6 +187,229 @@
 
         </div>
 
+
+    </div>
+    <div id="intro" class="templatecenter" style="overflow: auto; padding-top: 20px">
+        <div style="float: left">
+            <img src="Rectangle.png" />
+
+        </div>
+        <div style="float: right; width: 600px; padding-top: 150px">
+            <span class="hugetitle textgeorgia">A HUGE TITLE HERE</span>
+            <br />
+            <span class="textgeorgia">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            <br />
+            <a href="#" class="textgeorgia" style="float: right; color: #ba2e1f; text-decoration: none">READ MORE>></a>
+        </div>
+
+
+    </div>
+    <div id="content" style="background-color: #f2f2f2; padding-top: 45px;  padding-bottom: 45px">
+        <div class="templatecenter" style="overflow: auto;margin-bottom: 30px">
+            <div style="float: left; word-wrap: break-word;width: 300px;">
+                <p class="textgeorgia" style="font-size: 26px; margin-top: 0;margin-bottom: 40px">A Little About Us</p>
+
+                <img src="Image.png" style="width: 290px; height: 140px; margin-bottom: 15px" />
+                <span class="textgeorgia" style="width: 300px; word-wrap: break-word; color: #878787">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                <br />
+                <br />
+                <span class="textgeorgia" style="width: 300px; word-wrap: break-word; color: #878787">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                <br />
+                <a href="#" class="textgeorgia" style="float: right; color: #ba2e1f; text-decoration: none; font-size: 13px">Read More About Us>></a>
+
+
+            </div>
+            <div style="display: inline-block; margin-left: 150px;word-wrap: break-word;width: 300px;">
+                <p class="textgeorgia" style="font-size: 26px; margin-top: 0px;margin-bottom: 40px">Some of Our Services</p>
+
+                <div style="display: inline-block; width: auto; height: auto; padding-bottom: 20px">
+                    <div style="float: left; position: relative">
+                        <img src="Icon.png" style="width: 64px; height: 64px" />
+                        <p style="position: absolute; top: 0px; text-align: center; width: 63px; color: #ffffff">64 x 64px</p>
+                    </div>
+                    <div style="float: right; word-wrap: break-word; width: 200px; padding-left: 20px">
+                        <span class="textgeorgia" style="font-size: 14px; text-align: left; color: #878787; font-weight: bold">Service Name</span>
+                        <br />
+                        <span class="textgeorgia" style="font-size: 13px; text-align: left; color: #878787">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</span>
+                    </div>
+                </div>
+
+                <div style="display: inline-block; width: auto; height: auto; padding-bottom: 20px">
+                    <div style="float: left; position: relative">
+                        <img src="Icon.png" style="width: 64px; height: 64px" />
+                        <p style="position: absolute; top: 0px; text-align: center; width: 63px; color: #ffffff">64 x 64px</p>
+                    </div>
+                    <div style="float: right; word-wrap: break-word; width: 200px; padding-left: 20px">
+                        <span class="textgeorgia" style="font-size: 14px; text-align: left; color: #878787; font-weight: bold">Service Name</span>
+                        <br />
+                        <span class="textgeorgia" style="font-size: 13px; text-align: left; color: #878787">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</span>
+                    </div>
+                </div>
+
+                <div style="display: inline-block; width: auto; height: auto; padding-bottom: 20px">
+                    <div style="float: left; position: relative">
+                        <img src="Icon.png" style="width: 64px; height: 64px" />
+                        <p style="position: absolute; top: 0px; text-align: center; width: 63px; color: #ffffff">64 x 64px</p>
+                    </div>
+                    <div style="float: right; word-wrap: break-word; width: 200px; padding-left: 20px">
+                        <span class="textgeorgia" style="font-size: 14px; text-align: left; color: #878787; font-weight: bold">Service Name</span>
+                        <br />
+                        <span class="textgeorgia" style="font-size: 13px; text-align: left; color: #878787">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</span>
+                    </div>
+                </div>
+                <div style="display: inline-block; width: auto; height: auto; padding-bottom: 20px">
+                    <div style="float: left; position: relative">
+                        <img src="Icon.png" style="width: 64px; height: 64px" />
+                        <p style="position: absolute; top: 0px; text-align: center; width: 63px; color: #ffffff">64 x 64px</p>
+                    </div>
+                    <div style="float: right; word-wrap: break-word; width: 200px; padding-left: 20px">
+                        <span class="textgeorgia" style="font-size: 14px; text-align: left; color: #878787; font-weight: bold">Service Name</span>
+                        <br />
+                        <span class="textgeorgia" style="font-size: 13px; text-align: left; color: #878787">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</span>
+                    </div>
+                </div>
+
+                <br />
+                <br />
+                <a href="#" class="textgeorgia" style="float: right; color: #ba2e1f; text-decoration: none; font-size: 13px">View All Of Our Services>></a>
+
+
+
+            </div>
+            <div style="float: right; word-wrap: break-word;width: 300px;">
+                <p class="textgeorgia" style="font-size: 26px; margin-bottom: 30px;margin-top:0px">What Our Clients Say</p>
+                <div>
+                    <img src="Composite.png" style="float:left " />
+                    <p class="textgeorgia" style="float: left;font-size: 16px; color: #989898; font-weight: bold; text-align: left;margin-left: 15px">Tommy Tanker - CEO</p>
+                    <br />
+                    <p class="textgeorgia" style="font-size: 13px; color: #888888; text-align: left; margin-top: 40px;">Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
+                    <br />
+                    <a href="#" class="textgeorgia" style="float: right; color: #ba2e1f; text-decoration: none; font-size: 13px">View This Project>></a>
+                    <br />
+                </div>
+                <div>
+                    <img src="Composite.png" style="float:left " />
+                    <p class="textgeorgia" style="float: left;font-size: 16px; color: #989898; font-weight: bold; text-align: left;margin-left: 15px">Tommy Tanker - CEO</p>
+                    <br />
+                    <p class="textgeorgia" style="font-size: 13px; color: #888888; text-align: left; margin-top: 40px;">Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
+                    <br />
+                    <a href="#" class="textgeorgia" style="float: right; color: #ba2e1f; text-decoration: none; font-size: 13px">View This Project>></a>
+                    <br />
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div id="footer" style=" padding-top: 45px;  padding-bottom: 45px">
+        <div class="templatecenter">
+            <div style="float: left; width: 20%; padding-right: 20px">
+                <img src="Line.png" />
+                <p style="font-size: 16px; font-weight: bold; color: #666666">LATEST TWEETS</p>
+                <p class="textgeorgia" style="font-size: 12px;color:#878787">
+                    <span style="color: #ba2e1f !important">@namehere</span> Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus.
+                    <br />
+                    1 day ago
+                </p>
+
+                <p class="textgeorgia" style="font-size: 12px;color:#878787">
+                    <span style="color: #ba2e1f !important">@namehere</span> Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus.
+                    <br />
+                    1 day ago
+                </p>
+            </div>
+            <div style="display: inline-block; width: 20%; padding-right: 20px">
+                <img src="Line.png" />
+                <p style="font-size: 16px; font-weight: bold; color: #666666">QUICK LINKS</p>
+
+                <a href="#" class="textgeorgia" style="font-size: 12px; color: #878787;text-decoration: none">
+                    > Lorem ipsum dolor sit.
+                </a>
+                <img src="underline.png" />
+
+
+
+                <a href="#" class="textgeorgia" style="font-size: 12px; color: #878787;text-decoration: none">
+                    > Lorem ipsum dolor sit.
+                </a>
+                <img src="underline.png" />
+                <a href="#" class="textgeorgia" style="font-size: 12px; color: #878787;text-decoration: none">
+                    > Lorem ipsum dolor sit.
+                </a>
+                <img src="underline.png" />
+                <a href="#" class="textgeorgia" style="font-size: 12px; color: #878787;text-decoration: none">
+                    > Lorem ipsum dolor sit.
+                </a>
+                <img src="underline.png" />
+                <a href="#" class="textgeorgia" style="font-size: 12px; color: #878787;text-decoration: none">
+                    > Lorem ipsum dolor sit.
+                </a>
+                <img src="underline.png" />
+                <a href="#" class="textgeorgia" style="font-size: 12px; color: #878787;text-decoration: none">
+                    > Lorem ipsum dolor sit.
+                </a>
+                <img src="underline.png" />
+                <a href="#" class="textgeorgia" style="font-size: 12px; color: #878787;text-decoration: none">
+                    > Lorem ipsum dolor sit.
+                </a>
+                <img src="underline.png" />
+                <a href="#" class="textgeorgia" style="font-size: 12px; color: #878787;text-decoration: none">
+                    > Lorem ipsum dolor sit.
+                </a>
+                <img src="underline.png" />
+                <a href="#" class="textgeorgia" style="font-size: 12px; color: #878787;text-decoration: none">
+                    > Lorem ipsum dolor sit.
+                </a>
+                <img src="underline.png" />
+
+
+            </div>
+            <!--<div style="display: inline-block; width: 20%; padding-right: 20px">
+                <img src="Line.png" />
+                <p style="font-size: 16px; font-weight: bold; color: #666666">LATEST BLOG POSTS</p>
+            </div>-->
+
+            <div style="float: right; width: 20%; padding-right: 20px">
+                <img src="Line.png" />
+                <p style="font-size: 16px; font-weight: bold; color: #666666">CONTACT US</p>
+                <div>
+                    <input class="customborder" type="text" placeholder=" Name" style="" />
+                    <input class="customborder" type="text" placeholder=" Email" />
+                    <input class="customborder" type="text" placeholder=" Subject" />
+                    <textarea class="customborder" placeholder="Message" style="height: 80px; width: 100%;font-family: 'Georgia' !important;"></textarea>
+                    <input class="customborder" type="submit" value="SUBMIT" style="color: #ba2e1f; width: auto;" />
+
+
+
+                </div>
+            </div>
+            <div style="float: right; width: 20%; padding-right: 20px">
+                <img src="Line.png" />
+                <p style="font-size: 16px; font-weight: bold; color: #666666">LATEST BLOG POSTS</p>
+                <div style="height: 150px">
+                    <p class="textgeorgia" style="font-size: 12px; color: #878787;font-weight: bold">Post Title</p>
+                    <p class="textgeorgia" style="font-size: 12px;color:#878787">
+                        Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus.
+                    </p>
+                    <a href="#" class="textgeorgia" style="float: right; color: #ba2e1f; text-decoration: none;font-size: 12px">Read More>></a>
+                </div>
+                <div style="height: 150px">
+                    <p class="textgeorgia" style="font-size: 12px; color: #878787;font-weight: bold">Post Title</p>
+                    <p class="textgeorgia" style="font-size: 12px;color:#878787">
+                        Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus.
+                    </p>
+                    <a href="#" class="textgeorgia" style="float: right; color: #ba2e1f; text-decoration: none;font-size: 12px">Read More>></a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="templatecenter"style="background-color: #f2f2f2; height: 10px; padding-top: 15px;padding-bottom: 20px">
+        <span style="float: left; color: #919191;font-size: 12px">Copyright © 2013 Domain Name - All Rights Reserved</span>
+        <span style="float: right;color: #919191;font-size: 12px">Template By OS Template</span>
 
     </div>
 
