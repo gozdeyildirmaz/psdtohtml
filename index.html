@@ -10,6 +10,15 @@
 
     <title>Hello, world!</title>
     <style>
+        body, html
+        {
+            padding: 0;
+            margin: 0;
+        }
+
+        /** {
+            outline: 2px solid red;
+        }*/
         @media screen and (min-width: 1526px) and (max-width: 2560px) {
 
             .navlink {
@@ -457,7 +466,6 @@
             }
         }
 
-
         @media (min-width: 768px) and (max-width: 1024px) {
             .navlink {
                 font-size: 11px !important;
@@ -490,11 +498,8 @@
             }
         }
 
-
-
         @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
         }
-
 
         @media (min-width: 481px) and (max-width: 767px) {
             .topnavigation {
@@ -533,7 +538,8 @@
             }
 
             .navlink {
-                padding-right: 100%;
+                padding-right: inherit;
+                display:block;
             }
 
             .top-bar {
@@ -566,7 +572,6 @@
                 display: block;
             }
         }
-
 
         @media (min-width: 320px) and (max-width: 480px) {
 
@@ -606,7 +611,8 @@
             }
 
             .navlink {
-                padding-right: 100%;
+                padding-right: inherit;
+                display: block;
             }
 
             .top-bar {
@@ -652,7 +658,6 @@
                 width: auto;
             }
         }
-
 
         /*.top-bar {
             background-color: #ba2e1f;
@@ -811,9 +816,6 @@
             width: 64px;
             height: 64px
         }*/
-
-
-
 
     </style>
 </head>
